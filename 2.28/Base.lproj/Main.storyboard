@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,28 +13,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__28" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kz-gC-AaM">
-                                <rect key="frame" x="20" y="492" width="388" height="400"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61T-db-hsX">
-                                <rect key="frame" x="20" y="44" width="388" height="400"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="zmW-Hb-uxK">
+                                <rect key="frame" x="64" y="20" width="716" height="329"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61T-db-hsX">
+                                        <rect key="frame" x="0.0" y="0.0" width="716" height="140.66666666666666"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kz-gC-AaM">
+                                        <rect key="frame" x="0.0" y="188.66666666666663" width="716" height="140.33333333333337"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
-                            <constraint firstItem="6kz-gC-AaM" firstAttribute="top" secondItem="61T-db-hsX" secondAttribute="bottom" constant="48" id="4Sm-AE-Gug"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6kz-gC-AaM" secondAttribute="trailing" constant="20" id="IJ2-KT-QVI"/>
-                            <constraint firstItem="61T-db-hsX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="X6s-vU-0Zw"/>
-                            <constraint firstItem="6kz-gC-AaM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gmc-So-xB7"/>
-                            <constraint firstItem="61T-db-hsX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="grg-RG-0NS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="61T-db-hsX" secondAttribute="trailing" constant="20" id="l0J-gt-p3V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6kz-gC-AaM" secondAttribute="bottom" id="nvb-eG-iTo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zmW-Hb-uxK" secondAttribute="bottom" constant="20" id="85G-KA-4AP"/>
+                            <constraint firstItem="zmW-Hb-uxK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Urw-H8-gAV"/>
+                            <constraint firstItem="zmW-Hb-uxK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aCU-fN-qal"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zmW-Hb-uxK" secondAttribute="trailing" constant="20" id="icD-0H-uxV"/>
                         </constraints>
                     </view>
                 </viewController>
